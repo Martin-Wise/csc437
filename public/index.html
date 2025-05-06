@@ -2,39 +2,54 @@
 <html>
   <head>
     <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="header.mjs"></script>
   </head>
   <body>
     <!-- Hello, I'm a comment -->
-    <h1>Martin Wise</h1>
-    <img src="IMG_3477 (1).JPG" height="200" />
-    <p>This is me.</p>
-    <h2>Main Navigation</h2>
-    <p>
-      || <a href="index.html">Home</a> ||
-      <a href="projects.html">Projects</a> ||
-    </p>
-
-    <h2>Contact Information</h2>
-    <dl>
-      <dt>Email:</dt>
-      <dd>mwise02@gmail.com</dd>
-      <dt>Phone:</dt>
-      <dd>xxx-xxx-xxxx</dd>
-      <dt>Github:</dt>
-      <dd><a href="https://github.com/dashboard">Here</a></dd>
-    </dl>
-
-    <h2>About Me</h2>
-    <p>
-      I am a fourth year trasfer here currently attending <b>Cal Poly</b> as a
-      Computer Science major. Before Cal Poly, I went to College of the Canyons,
-      a community college where I recieved my AS in computer science.
-    </p>
-    <p>Hobbies</p>
-    <ol>
-      <li>Gaming</li>
-      <li>Hiking</li>
-      <li>Cooking</li>
-    </ol>
+    <header>
+      <div id="nav-content">
+        <h1>Martin Wise</h1>
+        <button id="nav-button">Menu</button>
+      </div>
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="projects.html">Projects</a>
+    </header>
+    <main>
+      <div id="left">
+        <img alt="" src="IMG_3477 (1).JPG" height="200" />
+        <h2>Contact Information</h2>
+        <dl>
+          <dt>Email:</dt>
+          <dd>xxxxx@xxxxx.com</dd>
+          <dt>Phone:</dt>
+          <dd>xxx-xxx-xxxx</dd>
+          <dt>Github:</dt>
+          <dd><a href="https://github.com/dashboard">Here</a></dd>
+        </dl>
+      </div>
+      <div id="right">
+        <h2>About Me</h2>
+        <hr />
+        <p>
+          I am a fourth year trasfer here currently attending <b>Cal Poly</b> as
+          a Computer Science major. Before Cal Poly, I went to College of the
+          Canyons, a community college where I recieved my AS in computer
+          science.
+        </p>
+        <p>Hobbies:</p>
+        <ol>
+          <li>Gaming</li>
+          <li>Hiking</li>
+          <li>Cooking</li>
+        </ol>
+      </div>
+    </main>
   </body>
 </html>
